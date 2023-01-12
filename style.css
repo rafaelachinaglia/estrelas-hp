@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0, #120c56, #000000);
+}
+
+h1{
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+    padding: 23% 15% 25% 13%;
+    position:absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:100;
+}
+
+.estrelas{
+    filter: blur(1.5px);
+    position: relative;
+    width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	box-shadow: 50px 30px white,
+    80px 600px white,
+    300px 100px white,
+    400px 600px white,
+    100px 300px white,
+    500px 250px white,
+    700px 450px white,
+    800px 150px white,
+    950px 50px white,
+    1100px 600px white,
+    980px 400px white,
+    1300px 200px white,
+    200px 450px white;
+    animation: anima-estrelas 10s linear infinite;
+
+}
+
+.estrelas::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    content: " ";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    80px 600px white,
+    300px 100px white,
+    400px 600px white,
+    100px 300px white,
+    500px 250px white,
+    700px 450px white,
+    800px 150px white,
+    950px 50px white,
+    1100px 600px white,
+    980px 400px white,
+    1300px 200px white,
+    200px 450px white;
+  }
+
+  .estrelas2{
+    filter: blur(1.5px);
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 70px 40px white,
+    90px 700px white,
+    400px 200px white,
+    500px 600px white,
+    200px 400px white,
+    600px 350px white,
+    600px 550px white,
+    800px 250px white,
+    950px 60px white,
+    1200px 600px white,
+    1080px 500px white,
+    1400px 300px white,
+    300px 550px white;
+    animation: anima-estrelas 20s linear infinite;
+  }
+
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 70px 40px white,
+    90px 700px white,
+    400px 200px white,
+    500px 600px white,
+    200px 400px white,
+    600px 350px white,
+    600px 550px white,
+    800px 250px white,
+    950px 60px white,
+    1200px 600px white,
+    1080px 500px white,
+    1400px 300px white,
+    300px 550px white;
+  }
+  
+
+@keyframes anima-estrelas {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
